@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weatherapp</string>
+    <string name="temperature">Temperature</string>
+    <string name="baltimore_usa">Baltimore,US</string>
+    <string name="Search_City">Search City</string>
+
+</resources>

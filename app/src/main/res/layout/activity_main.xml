@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#77bf"
+    tools:context=".MainActivity">
+
+    <!--suppress AndroidDomInspection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/baltimore_usa"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/temperature"
+        android:textColor="#000"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imagetext"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tempText"
+    android:layout_centerHorizontal="true"
+        android:background="#77bf"
+        android:maxHeight="300dp"
+        android:maxWidth="300dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/condtext"
+        android:layout_below="@id/high"
+
+        android:textColor="#000"
+        android:text="Condition:"
+        android:textSize="18dp"
+        android:layout_marginLeft="80dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/windtext"
+        android:layout_below="@id/condtext"
+        android:textColor="#000"
+        android:text="Wind:"
+        android:textSize="18dp"
+       android:layout_marginLeft="80dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloudtext"
+        android:layout_below="@id/windtext"
+        android:textColor="#000"
+        android:text="Clouds:"
+        android:textSize="18dp"
+        android:layout_marginLeft="80dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunrisetext"
+        android:layout_below="@id/cloudtext"
+        android:textColor="#000"
+        android:text="Sunrise:"
+        android:textSize="18dp"
+        android:layout_marginLeft="80dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunset"
+        android:layout_below="@id/sunrisetext"
+        android:textColor="#000"
+        android:text="Sunset:"
+        android:textSize="18dp"
+        android:layout_marginLeft="80dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressure"
+        android:layout_below="@id/sunset"
+        android:textColor="#000"
+        android:text="Pressure:"
+        android:textSize="18dp"
+        android:layout_marginLeft="80dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LastUpdated"
+        android:layout_below="@id/pressure"
+        android:textColor="#000"
+        android:text="Last Updated:"
+        android:textSize="18dp"
+        android:layout_marginLeft="80dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/high"
+        android:layout_below="@id/imagetext"
+        android:textColor="#000"
+        android:text="High/Low: "
+        android:textSize="18dp"
+        android:layout_marginLeft="80dp"
+
+
+        />
+    
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchunits"
+        android:textSize="18dp"
+        android:text="F°/C°"
+        android:theme="@style/Theme.AppCompat.Light"
+
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+         android:max="200"
+        android:layout_below="@id/LastUpdated"
+        android:theme="@style/Theme.AppCompat.Light"
+        android:layout_centerHorizontal="true"
+        android:progress="0"
+
+        />
+
+
+</RelativeLayout>
